@@ -1,0 +1,57 @@
+// 1. Cargar variables primero
+@import 'componentes/variables';
+
+// 2. Estilos base
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: $fuente-cuerpo;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fuente-titulos;
+}
+
+.main {
+    padding: 20px 40px;
+    min-height: 60vh;
+}
+
+.seccion-principal {
+    background-color: $color-blanco;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    .titulo-seccion {
+        color: $color-primario;
+        border-bottom: 2px solid $color-primario;
+        padding-bottom: 5px;
+    }
+
+    .subtitulo-seccion {
+        color: $color-texto;
+    }
+
+    .texto-intro,
+    .texto-indicacion {
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+}
+
+.misTrabajos {
+    background-color: #eee;
+    border: 1px dashed #ccc;
+    padding: 40px;
+    text-align: center;
+    color: #777;
+}
+
+// 3. Importar los módulos creados
+@import 'componentes/header';
+@import 'componentes/footer';
+@import 'componentes/contacto';

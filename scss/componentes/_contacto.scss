@@ -1,0 +1,43 @@
+.formulario-contacto {
+    margin-top: 20px;
+
+    .campo-form {
+        margin-bottom: 15px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: $color-texto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: $fuente-cuerpo;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    .boton-enviar {
+        background-color: $color-primario;
+        color: $color-blanco;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-family: $fuente-titulos;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($color-primario, 10%);
+        }
+    }
+}

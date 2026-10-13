@@ -1,0 +1,16 @@
+.footer {
+    background-color: $color-oscuro;
+    color: #aaa;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 20px;
+
+    .pie-copy {
+        margin: 0;
+    }
+
+    .pie-subtexto {
+        margin: 5px 0 0 0;
+        font-size: 0.9em;
+    }
+}
