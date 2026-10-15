@@ -21,6 +21,7 @@ El objetivo del ejercicio era coger una web personal/portfolio de 3 páginas bas
 
 ### 3. Verificación (Fase 3)
 - Pasé el código compilado `estilos.css` por el **W3C CSS Validator** y comprobé que no tuviera ningún error de sintaxis.
+<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/50602cb0-176a-41f6-ad84-deb445317f89" />
 
 ---
 
