@@ -1,4 +1,3 @@
-```markdown
 # Proyecto Refactor - Portfolio Personal
 
 El objetivo del ejercicio era coger una web personal/portfolio de 3 páginas bastante desordenada (con estilos en línea y bloque `<style>` en el HTML) y dejarla completamente limpia, organizada y homogénea usando HTML semántico y **Sass (SCSS)**.
