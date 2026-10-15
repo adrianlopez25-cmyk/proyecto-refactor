@@ -1,3 +1,10 @@
+@mixin flex-centro($gap: 20px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
 .cabecera-principal {
     background-color: $color-primario;
     color: $color-blanco;
@@ -23,10 +30,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        @include flex-centro(20px);
     }
 
     .nav-item {

@@ -1,0 +1,43 @@
+```markdown
+# Proyecto Refactor - Portfolio Personal
+
+El objetivo del ejercicio era coger una web personal/portfolio de 3 páginas bastante desordenada (con estilos en línea y bloque `<style>` en el HTML) y dejarla completamente limpia, organizada y homogénea usando HTML semántico y **Sass (SCSS)**.
+
+---
+
+## Lo que he hecho en el proyecto
+
+### 1. Limpieza y Refactorización (Fase 1)
+- **HTML Limpio:** Eliminé todos los atributos `style=""` de `index.html` y el bloque `<style>` de `sobre.html`.
+- **Estructura Semántica:** Utilicé etiquetas de HTML5 como `<header>`, `<nav>`, `<main>`, `<section>`, `<form>` y `<footer>` en todas las páginas.
+- **Página de Contacto:** Creé desde cero la tercera página (`contacto.html`) con un formulario básico (`label`, `input`, `textarea` y `button`).
+- **Enlace centralizado:** Las tres páginas enlazan a un único archivo compilado `scss/estilos.css`.
+
+### 2. Estilos y SASS (Fase 2)
+- **Estructura por Componentes:** Organicé los estilos dentro de la carpeta `scss/componentes/` dividiendo el código en parciales (`_variables.scss`, `_header.scss`, `_footer.scss`, `_contacto.scss`).
+- **Paleta de Colores y Variables:** Definí variables SASS para los colores primario, secundario, texto y fondo.
+- **Tipografías:** Importé dos fuentes desde Google Fonts (`Montserrat` para encabezados y `Roboto` para el texto del cuerpo).
+- **Mixins y Anidamiento:** Utilicé anidamiento (nesting) de Sass y creé mixins reutilizables para el Flexbox del menú de navegación (`flex-centro`) y para dar formato al botón del formulario (`estilo-boton`).
+- **Navegación y Formulario:** Quité los subrayados de los enlaces del `<nav>`, los alineé en horizontal con Flexbox y añadí un efecto `:hover`. Además, estilicé los `input` y `textarea` del formulario al `100%` de ancho con padding y márgenes.
+
+### 3. Verificación (Fase 3)
+- Pasé el código compilado `estilos.css` por el **W3C CSS Validator** y comprobé que no tuviera ningún error de sintaxis.
+
+---
+
+## 📂 Estructura de carpetas
+
+```text
+proyecto-refactor/
+├── contacto.html
+├── index.html
+├── sobre.html
+├── README.md
+└── scss/
+    ├── componentes/
+    │   ├── _contacto.scss
+    │   ├── _footer.scss
+    │   ├── _header.scss
+    │   └── _variables.scss
+    ├── estilos.css
+    └── estilos.scss
